@@ -9,4 +9,13 @@ class LinkTest < CapybaraTestCase
     assert_equal '/about', current_path
     assert page.has_content?("About Me!")
   end
+
+  def test_user_can_see_other_pages
+    visit '/'
+    click_on "Contact"
+
+    assert_equal 200, page.status_code
+    assert_equal '/contact', current_path
+    assert page.has_content?("Phone Number")
+  end
 end

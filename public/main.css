@@ -1,7 +1,10 @@
 body {
   background-color: pink;
 }
-
+h1 {
+  font-family: sans-serif;
+  text-align: left;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -9,11 +12,9 @@ ul {
     overflow: hidden;
     background-color: #333;
 }
-
 li {
    float: right;
 }
-
 li a {
    display: block;
    color: white;
@@ -21,8 +22,19 @@ li a {
    padding: 14px 16px;
    text-decoration: none;
 }
-
 /* Change the link color to #111 (black) on hover */
 li a:hover {
    background-color: #111;
+}
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    font-size: 16px;
+    padding: 16px;
+    display: inline-block;
+}
+.button:hover {
+    background-color: #555555;
+    color: white;
 }
